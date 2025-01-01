@@ -1,0 +1,1 @@
+This repository demonstrates a common but easily missed error in Dart asynchronous programming.  The `fetchData` function handles exceptions, but without explicitly rethrowing them, the `main` function doesn't catch the exception. This makes debugging harder as the error might not be apparent from the output.  The `bugSolution.dart` file shows the correct approach.
